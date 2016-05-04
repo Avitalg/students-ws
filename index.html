@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Students-ws by Avitalg</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/Avitalg/students-ws">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Students-ws</h1>
+            <h2></h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/Avitalg/students-ws/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/Avitalg/students-ws/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h2>
+<a id="welcome-to-my-api" class="anchor" href="#welcome-to-my-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to My API.</h2>
+
+<p>This data could help you use my API.</p>
+
+<h3>
+<a id="get-all-students" class="anchor" href="#get-all-students" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get All Students</h3>
+
+<p>If you want to get all student, please enter the following URL:
+<code>http://localhost:3000/allStudents</code></p>
+
+<p>Result example:
+<code>
+[
+{
+student_id: 1,
+name: "tom",
+area: "center",
+degree: "bsc",
+grade: 81,
+year: 1
+},
+{
+student_id: 2,
+name: "yossi",
+area: "south",
+degree: "ba",
+grade: 94,
+year: 2
+},
+{
+student_id: 3,
+name: "bar",
+area: "north",
+degree: "bsc",
+grade: 92,
+year: 1
+},
+{
+student_id: 4,
+name: "gal",
+area: "north",
+degree: "ba",
+grade: 72,
+year: 3
+},
+]
+</code></p>
+
+<h3>
+<a id="get-student-by-id" class="anchor" href="#get-student-by-id" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get Student By Id</h3>
+
+<p>you can find a student by his Id, by entering the following URL:
+<code>http://localhost:3000/getStudent/id</code></p>
+
+<p>Example:
+<code>http://localhost:3000/getStudent/1</code>
+and the result will be 
+<code>
+{
+student_id: 1,
+name: "tom",
+area: "center",
+degree: "bsc",
+grade: 81,
+year: 1
+}
+</code></p>
+
+<h3>
+<a id="get-all-excellence-students" class="anchor" href="#get-all-excellence-students" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>get All Excellence Students</h3>
+
+<p>you can find all excellence students, by entering the following URL:
+<code>http://localhost:3000/getAllExcellenceStudents</code></p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/Avitalg">Avitalg</a> can be found on <a href="https://github.com/Avitalg/students-ws">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
