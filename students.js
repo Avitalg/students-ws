@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 
-var data = JSON.parse(fs.readFileSync('data/students.json', 'utf8'));
+var data = JSON.parse(fs.readFileSync(__dirname+'/data/students.json', 'utf8'));
 
 
 //returns the student details by his id
