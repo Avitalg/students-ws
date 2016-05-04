@@ -1,0 +1,163 @@
+{
+	"students": [{
+		"student_id": 1,
+		"name": "tom",
+		"area": "center",
+		"degree": "bsc",
+		"grade": 81,
+		"year" : 1
+	},
+	{
+		"student_id": 2,
+		"name": "yossi",
+		"area": "south",
+		"degree": "ba",
+		"grade": 94,
+		"year" : 2
+	},
+	{
+		"student_id": 3,
+		"name": "bar",
+		"area": "north",
+		"degree": "bsc",
+		"grade": 92,
+		"year": 1
+	},
+	{
+		"student_id": 4,
+		"name": "gal",
+		"area": "north",
+		"degree": "ba",
+		"grade": 72,
+		"year": 3
+	},	
+	{
+		"student_id": 5,
+		"name": "dan",
+		"area": "center",
+		"degree": "bsc",
+		"grade": 97,
+		"year": 4
+	},
+	{
+		"student_id": 6,
+		"name": "mali",
+		"area": "north",
+		"degree": "ba",
+		"grade": 93,
+		"year": 2
+	},
+	{
+		"student_id": 7,
+		"name": "tomer",
+		"area": "center",
+		"degree": "bsc",
+		"grade": 65,
+		"year": 1
+	},
+	{
+		"student_id": 8,
+		"name": "vadim",
+		"area": "north",
+		"degree": "bsc",
+		"grade": 70,
+		"year": 3
+	},
+	{
+		"student_id": 9,
+		"name": "roni",
+		"area": "north",
+		"degree": "bsc",
+		"grade": 90,
+		"year": 2
+	},
+	{
+		"student_id": 10,
+		"name": "tomi",
+		"area": "center",
+		"degree": "bsc",
+		"grade": 82,
+		"year": 3
+	},
+	{
+		"student_id": 11,
+		"name": "mor",
+		"area": "south",
+		"degree": "bsc",
+		"grade": 87,
+		"year": 3
+	},
+	{
+		"student_id": 12,
+		"name": "koral",
+		"area": "south",
+		"degree": "ba",
+		"grade": 85,
+		"year": 4
+	},
+	{
+		"student_id": 13,
+		"name": "ohad",
+		"area": "center",
+		"degree": "ba",
+		"grade": 88,
+		"year": 2
+	},
+	{
+		"student_id": 14,
+		"name": "daniel",
+		"area": "north",
+		"degree": "ba",
+		"grade": 87,
+		"year": 4
+	},
+	{
+		"student_id": 15,
+		"name": "noa",
+		"area": "center",
+		"degree": "bsc",
+		"grade": 99,
+		"year": 3
+	},
+	{
+		"student_id": 16,
+		"name": "shir",
+		"area": "north",
+		"degree": "bsc",
+		"grade": 88,
+		"year": 2
+	},
+	{
+		"student_id": 17,
+		"name": "yarden",
+		"area": "south",
+		"grade": 73,
+		"degree": "bsc",
+		"year": 3
+	},
+	{
+		"student_id": 18,
+		"name": "sivan",
+		"area": "center",
+		"degree": "bsc",
+		"grade": 93,
+		"year": 2
+	},
+	{
+		"student_id": 19,
+		"name": "rona",
+		"area": "north",
+		"degree": "bsc",
+		"grade": 82,
+		"year": 1
+	},
+	{
+		"student_id": 20,
+		"name": "ron",
+		"area": "north",
+		"degree": "ba",
+		"grade": 80,
+		"year": 1
+	}
+	]
+}
