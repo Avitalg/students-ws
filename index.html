@@ -55,7 +55,7 @@
 <a id="get-all-students" class="anchor" href="#get-all-students" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get All Students</h3>
 
 <p>If you want to get all student, please enter the following URL:
-<code>http://localhost:3000/allStudents</code></p>
+<code>https://wstudents.herokuapp.com/allStudents</code></p>
 
 <p>Result example:
 <code>
@@ -99,10 +99,10 @@ year: 3
 <a id="get-student-by-id" class="anchor" href="#get-student-by-id" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get Student By Id</h3>
 
 <p>you can find a student by his Id, by entering the following URL:
-<code>http://localhost:3000/getStudent/id</code></p>
+<code>https://wstudents.herokuapp.com/getStudent/id</code></p>
 
 <p>Example:
-<code>http://localhost:3000/getStudent/1</code>
+<code>https://wstudents.herokuapp.com/getStudent/1</code>
 and the result will be 
 <code>
 {
@@ -119,17 +119,163 @@ year: 1
 <a id="get-all-excellence-students" class="anchor" href="#get-all-excellence-students" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>get All Excellence Students</h3>
 
 <p>you can find all excellence students, by entering the following URL:
-<code>http://localhost:3000/getAllExcellenceStudents</code></p>
+<code>https://wstudents.herokuapp.com/getAllExcellenceStudents</code></p>
+
+<h3>
+<a id="get-excellence-students-by-year" class="anchor" href="#get-excellence-students-by-year" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get Excellence Students by Year</h3>
+
+<p>you can find a student by their year in school, by entering the following URL:
+<code>https://wstudents.herokuapp.com/getExcellenceByYear/year</code></p>
+
+<p>year could be a number between 1 and 4, for example:
+<code>https://wstudents.herokuapp.com/getExcellenceByYear/1</code>
+and the result will be 
+<code>
+[
+{
+student_id: 3,
+name: "bar",
+area: "north",
+degree: "bsc",
+grade: 92,
+year: 1
+}
+]
+</code></p>
+
+<h3>
+<a id="get-students-by-area" class="anchor" href="#get-students-by-area" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get Students by Area</h3>
+
+<p>you can find students by the area they are studying in, by entering the following URL:
+<code>https://wstudents.herokuapp.com/getStudentByArea/area</code></p>
+
+<p>year could enter 'center','south' or 'north, for example:
+<code>https://wstudents.herokuapp.com/getStudentByArea/south</code>
+and the result will be 
+<code>
+[
+{
+student_id: 2,
+name: "yossi",
+area: "south",
+degree: "ba",
+grade: 94,
+year: 2
+},
+{
+student_id: 11,
+name: "mor",
+area: "south",
+degree: "bsc",
+grade: 87,
+year: 3
+},
+{
+student_id: 12,
+name: "koral",
+area: "south",
+degree: "ba",
+grade: 85,
+year: 4
+},
+{
+student_id: 17,
+name: "yarden",
+area: "south",
+grade: 73,
+degree: "bsc",
+year: 3
+}
+]
+</code></p>
+
+<h3>
+<a id="get-student-by-degree-and-year" class="anchor" href="#get-student-by-degree-and-year" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get Student By Degree and Year</h3>
+
+<p>You can get student by degree and year by entering the URL bellow:
+<code>https://wstudents.herokuapp.com/getStudent/:degree/:year</code></p>
+
+<p>For example, to find a student that study for bsc degree and his first year, you can enter:
+<code>https://wstudents.herokuapp.com/getStudent/bsc/1</code></p>
+
+<p>The result will be:
+<code>
+[
+{
+student_id: 1,
+name: "tom",
+area: "center",
+degree: "bsc",
+grade: 81,
+year: 1
+},
+{
+student_id: 3,
+name: "bar",
+area: "north",
+degree: "bsc",
+grade: 92,
+year: 1
+},
+{
+student_id: 7,
+name: "tomer",
+area: "center",
+degree: "bsc",
+grade: 65,
+year: 1
+},
+{
+student_id: 19,
+name: "rona",
+area: "north",
+degree: "bsc",
+grade: 82,
+year: 1
+}
+]
+</code></p>
+
+<h3>
+<a id="student-with-range-of-grades" class="anchor" href="#student-with-range-of-grades" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Student with range of grades</h3>
+
+<p>To find students that their grades between a range, you can enter the URL bellow:
+<code>https://wstudents.herokuapp.com/getGrade/grade1/grade2</code></p>
+
+<p>For example, to find students that their grade between 50 and 70, you should enter the URL:
+<code>https://wstudents.herokuapp.com/getGrade/50/70</code></p>
+
+<p>The result will be:
+<code>
+[
+{
+student_id: 7,
+name: "tomer",
+area: "center",
+degree: "bsc",
+grade: 65,
+year: 1
+},
+{
+student_id: 8,
+name: "vadim",
+area: "north",
+degree: "bsc",
+grade: 70,
+year: 3
+}
+]
+</code></p>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>This page was created for the course 'web services' at Shenkar  College for Engineering and Design by Avital Glazer (Avitalg).</p>
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+<p>Having trouble with Pages? You can contact me.</p>
       </section>
 
       <footer>
